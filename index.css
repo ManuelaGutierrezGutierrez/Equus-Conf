@@ -2,6 +2,18 @@
     color: #f5811d !important;
 }
 
+.btn-eqqus {
+    background-color:  #f5811d  !important;
+color: white;
+    
+}
+
+.btn-eqqus:hover {
+    background-color:  #d16e18  !important;
+
+    
+}
+
 #header img {
     width: 80px;
 }
