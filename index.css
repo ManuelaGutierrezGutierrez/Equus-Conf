@@ -44,6 +44,12 @@ color: white;
 height: 100%;
 }
 
+.speakers img{
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+ }
+
 #footer {
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
 }
