@@ -11,23 +11,24 @@
 
     <title>Bootstrap</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="navbar">
 
 
     <!-- Header section -->
 
     <!-- Navbar -->
+   
     <nav id="header" class="navbar navbar-expand-lg bg-light">
         <div class="container ">
           <a class="navbar-brand" href="#">
             <img src="assets/logo.png" alt="logo">Equus Conf
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
 
-          <div class="collapse navbar-collapse offset-md-4" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse offset-md-4" id="navbar">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto ">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
@@ -49,7 +50,6 @@
           </div>
         </div>
       </nav>
-
 
 
       <!-- Main -->
@@ -106,7 +106,7 @@
 
         <div class="row">
 
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="col-12 col-md-6 col-lg-4 ">
                 <div class="card">
                     <img src="assets/speaker1.jpg" class="card-img-top" alt="speaker">
                     <div class="card-body">
@@ -132,18 +132,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="assets/speaker3.jpg" class="card-img-top" alt="speaker">
-                    <div class="card-body">
-                        <div class="badges">
-                            <span class="badge text-bg-secondary">Competición</span>
-                        </div>
-                        <h5 class="card-title">Antonia Gil</h5>
-                        <p class="card-text">Medalla olímpica en salto y doma.</p>
-                    </div>
-                </div>
-            </div>
+         
 
             <div class="col-md-4 mb-4">
                 <div class="card">
@@ -159,13 +148,93 @@
             </div>
             
         </div>
-
     </div>
+</section>
+
+<!-- Place and Date -->
+
+<section id="place-date">
+<div class="container-fluid bg-dark text-light">
+    <div class="row">
+        <div class="col-12 col-lg-6 p-0">
+            <img src="assets/ifema.jpg" class="img-fluid" alt="place">
+        </div>
+        <div class="col-12 col-lg-6 pt-4 pb-4 pe-5">
+            <h2 class="pb-4">IFEMA - Octubre 2025</h2>
+            <p>Vive la emoción del mejor evento de hípica del mundo desde un lugar increíble y en un ambiente exclusivo.</p>
+            <p>Pabellones diseñados específicamente para cada exhibición, destacando la máxima atención a los pequeños detalles, asegurando la completa satisfacción de todos los invitados.</p>
+            <p class="pb-2">No te puedes perder el evento del año en la capital.</p>
+            <a class="btn btn-outline-light" href="#">Conoce más</a>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Form -->
+
+
+<section id="speaker" class="pt-5 pb-5">
+	<div class="container">
+		<div class="row">
+			<div class="col text-center">
+				<small class="text-uppercase"> Conviértete en un </small>
+				<h2>ORADOR</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center mb-3">
+				Anótate como orador para dar una charla <abbr data-toggle="tooltip" title="charlas de 5 minutos">ignite</abbr>. Cuéntanos de qué
+				quieres hablar!
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-3">
+				<div class="row mb-2">
+					<div class="form-label col-12 col-md-6 ">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Nombre"
+							aria-label="Nombre"
+						/>
+					</div>
+					<div class="form-label col-12 col-md-6">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Apellido"
+							aria-label="Apellido"
+						/>
+					</div>
+				</div>
+				<div class="form-label ">
+					<div class="col">
+						<textarea
+							name="text"
+							class="form-control form-control-lg"
+							placeholder="Sobre qué quieres hablar?"
+						></textarea>
+						<small class="form-text text-muted ">
+							Recuerda incluir un titulo para tu charla
+						</small>
+					</div>
+				</div>
+				<div class="form-label">
+					<div class="col">
+						<button type="button" class="btn btn-eqqus col-12 mt-2">
+							Enviar
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 
 
-    <!-- Footer section -->
+
+<!-- Footer section -->
     
 <footer id="footer" class="pb-4 pt-4">
     <div class="container">
@@ -191,7 +260,9 @@
         </div>
     </div>
 </footer>
+
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </body>
 </html>
